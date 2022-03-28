@@ -6,7 +6,7 @@ import matplotlib as mpl
 mpl.rcParams['font.family'] = 'sans-serif'
 mpl.rcParams['font.sans-serif'] = 'NSimSun,Times New Roman'
 
-f=open("D:\Python_work\dp\测试数据\\beibao3.in","r")
+f=open("测试数据/beibao3.in","r")
 res=f.readlines()[1:]
 
 x, y = np.loadtxt(res, delimiter=' ', unpack=True)

@@ -3,7 +3,7 @@ import numpy
 
 if __name__ == '__main__':
     #读取数据
-    f=open("D:\Python_work\dp\测试数据\\beibao0.in","r")
+    f=open("测试数据/beibao0.in","r")
     a=[]
     res=f.readlines()[1:]
     for line in res:
@@ -16,9 +16,9 @@ if __name__ == '__main__':
     print(a)
 
     #计算重量与价值的比值
-    F0=int(a[0][0])
-    S0=int(a[0][1])
-    T0=F0/S0
+    F0 = int(a[0][0])
+    S0 = int(a[0][1])
+    T0 = F0/S0
     F1 = int(a[1][0])
     S1 = int(a[1][1])
     T1 = F1 / S1
@@ -31,7 +31,7 @@ if __name__ == '__main__':
     F4 = int(a[4][0])
     S4 = int(a[4][1])
     T4 = F4 / S4
-    descending=[T0,T1,T2,T3,T4]
+    descending = [T0, T1, T2, T3, T4]
     print("非递增排序前为：")
     print(descending)
     descending.sort(reverse=True)
